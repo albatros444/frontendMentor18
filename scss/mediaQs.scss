@@ -1,0 +1,64 @@
+@media screen and (max-width: 515px) {
+  .background {
+    display: block;
+    height: 100%;
+    background-color: white;
+  }
+  .signUpCard {
+    flex-direction: column-reverse;
+    width: auto;
+    height: auto;
+    height: 842px;
+    border-radius: 0;
+    &__formPart {
+      flex-basis: 558px;
+      padding: 25px;
+      h1 {
+        font-size: 40px;
+        margin-top: 10px;
+      }
+      &__text {
+        margin-bottom: 23px;
+      }
+      ul {
+        margin-bottom: 36px;
+        li {
+          margin-bottom: 28px;
+          line-height: 1.5;
+          background: url(/assets/images/icon-list.svg) no-repeat 0px 2px;
+        }
+      }
+    }
+    &__heroImg {
+      padding: 0;
+      background: no-repeat
+        url("/assets/images/illustration-sign-up-mobile.svg") red;
+
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 284px;
+      background-size: cover;
+      border-radius: 0px 0px 18px 18px;
+    }
+  }
+  .containerForResponsive {
+    .successCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      width: auto;
+      padding: 25px;
+      padding-top: 148px;
+      padding-bottom: 40px;
+      border-radius: 0;
+      box-shadow: none;
+      &__containerForFlex {
+        h1 {
+          font-size: 40px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}

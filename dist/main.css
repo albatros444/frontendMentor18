@@ -1,0 +1,270 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  margin-top: 0;
+}
+
+textarea,
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(210, 1%, 64%);
+}
+
+.signUpCard {
+  display: flex;
+  width: 928px;
+  height: 640px;
+  border-radius: 37px;
+  background-color: white;
+}
+.signUpCard__formPart {
+  padding: 65px;
+}
+.signUpCard__formPart h1 {
+  margin-bottom: 20px;
+  margin-top: 26px;
+  font-size: 56px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.signUpCard__formPart__text {
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: hsl(234, 29%, 20%);
+}
+.signUpCard__formPart ul {
+  padding-left: 0;
+  margin-bottom: 34px;
+}
+.signUpCard__formPart ul li {
+  height: 30px;
+  margin-bottom: 4px;
+  padding-left: 37px;
+  padding-top: 1px;
+  background: url(/assets/images/icon-list.svg) no-repeat;
+  list-style-type: none;
+  color: hsl(234, 29%, 20%);
+}
+.signUpCard__formPart__form .labelAndErrorMessage {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+}
+.signUpCard__formPart__form .labelAndErrorMessage .label {
+  margin-bottom: 9px;
+  color: hsl(234, 29%, 20%);
+}
+.signUpCard__formPart__form .labelAndErrorMessage .errMessage {
+  margin-bottom: 9px;
+  color: hsl(4, 71%, 64%);
+}
+.signUpCard__formPart__form .wrongEmail {
+  border: solid 1px hsl(4, 54%, 59%);
+  color: hsl(4, 70%, 65%);
+  background-color: hsl(0, 63%, 93%);
+}
+.signUpCard__formPart__form input {
+  height: 56px;
+  width: 100%;
+  border-radius: 7px;
+  border: solid 1px hsl(233, 18%, 80%);
+  padding-left: 23px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.signUpCard__formPart__form input::placeholder {
+  color: hsl(233, 4%, 57%);
+}
+.signUpCard__formPart__form input:focus {
+  border: solid 1px black;
+  color: black;
+}
+.signUpCard__formPart__form button {
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  padding: 0;
+  padding-top: 5px;
+  border-radius: 7px;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: hsl(234, 29%, 20%);
+}
+.signUpCard__formPart__form button:hover {
+  background-image: linear-gradient(to right, rgb(255, 84, 118), rgb(253, 111, 82));
+  box-shadow: 0px 15px 25px rgb(247, 156, 156);
+}
+.signUpCard__heroImg {
+  flex-basis: 425px;
+  flex-shrink: 0;
+  background: no-repeat 1px 24px url("/assets/images/illustration-sign-up-desktop.svg");
+}
+
+.containerForResponsive {
+  display: none;
+}
+.containerForResponsive .successCard {
+  display: block;
+  width: 504px;
+  height: 520px;
+  background-color: white;
+  border-radius: 37px;
+  padding: 64px;
+  padding-top: 48px;
+  box-shadow: 0 15px 35px hsl(237, 19%, 21%);
+}
+.containerForResponsive .successCard__containerForFlex img {
+  margin-bottom: 37px;
+}
+.containerForResponsive .successCard__containerForFlex h1 {
+  margin-bottom: 24px;
+  font-size: 55px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: hsl(234, 29%, 20%);
+}
+.containerForResponsive .successCard__containerForFlex p {
+  color: hsl(234, 29%, 20%);
+  letter-spacing: 0.003em;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.containerForResponsive .successCard__containerForFlex p span {
+  font-weight: bold;
+  letter-spacing: 0.007em;
+}
+.containerForResponsive .successCard button {
+  display: inline-block;
+  height: 56px;
+  width: 100%;
+  padding: 0;
+  padding-top: 8px;
+  border-radius: 7px;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(234, 29%, 20%);
+}
+.containerForResponsive .successCard button:hover {
+  background-image: linear-gradient(to right, rgb(255, 84, 118), rgb(253, 111, 82));
+  box-shadow: 0px 15px 25px rgb(247, 156, 156);
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(235, 18%, 26%);
+}
+
+@media screen and (max-width: 515px) {
+  .background {
+    display: block;
+    height: 100%;
+    background-color: white;
+  }
+  .signUpCard {
+    flex-direction: column-reverse;
+    width: auto;
+    height: auto;
+    height: 842px;
+    border-radius: 0;
+  }
+  .signUpCard__formPart {
+    flex-basis: 558px;
+    padding: 25px;
+  }
+  .signUpCard__formPart h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .signUpCard__formPart__text {
+    margin-bottom: 23px;
+  }
+  .signUpCard__formPart ul {
+    margin-bottom: 36px;
+  }
+  .signUpCard__formPart ul li {
+    margin-bottom: 28px;
+    line-height: 1.5;
+    background: url(/assets/images/icon-list.svg) no-repeat 0px 2px;
+  }
+  .signUpCard__heroImg {
+    padding: 0;
+    background: no-repeat url("/assets/images/illustration-sign-up-mobile.svg") red;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 284px;
+    background-size: cover;
+    border-radius: 0px 0px 18px 18px;
+  }
+  .containerForResponsive .successCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: auto;
+    padding: 25px;
+    padding-top: 148px;
+    padding-bottom: 40px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .containerForResponsive .successCard__containerForFlex h1 {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+@import "globals";
+@import "footer";
+@import "signUpCard";
+@import "successCard";
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(235, 18%, 26%);
+}
+
+@import "mediaQs";

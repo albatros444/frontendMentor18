@@ -1,0 +1,62 @@
+.containerForResponsive {
+  display: none;
+  .successCard {
+    display: block;
+    width: 504px;
+    height: 520px;
+    background-color: white;
+    border-radius: 37px;
+    padding: 64px;
+    padding-top: 48px;
+    box-shadow: 0 15px 35px hsl(237, 19%, 21%);
+    &__containerForFlex {
+      img {
+        margin-bottom: 37px;
+      }
+      h1 {
+        margin-bottom: 24px;
+        font-size: 55px;
+        line-height: 1;
+        letter-spacing: 0.01em;
+        color: hsl(234, 29%, 20%);
+      }
+      p {
+        color: hsl(234, 29%, 20%);
+        letter-spacing: 0.003em;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        span {
+          font-weight: bold;
+          letter-spacing: 0.007em;
+        }
+      }
+    }
+    button {
+      display: inline-block;
+      height: 56px;
+      width: 100%;
+      padding: 0;
+      padding-top: 8px;
+      border-radius: 7px;
+      border: none;
+      outline: inherit;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: white;
+      text-decoration: none;
+      background-color: hsl(234, 29%, 20%);
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 84, 118, 1),
+          rgb(253, 111, 82)
+        );
+        box-shadow: 0px 15px 25px rgb(247, 156, 156);
+      }
+    }
+  }
+}
